@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="visual.css">
+    <script src="main.js"></script>
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+    <title>Lanchonete Tech4me</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="./img/logo.svg" />
+    </header>
+
+    <main>
+        <article class="resumo">
+            <header>
+                <div> 
+                    <h1>Boas vindas</h1>
+                    <p class="texto-destaque">Lanchonete da tech4me!</p>
+                </div>
+            </header>
+        </article>
+
+        <article class="formulario">
+            <header>
+                <h1>Escolha seu lanche favorito</h1>
+            </header>
+
+            <form>
+                <select name="sanduiche" id="sanduiche">
+                    <option value=""disabled selected>Selecionar</option>
+                    <option value="frango">R$10,00 Hamburguer</option>
+                    <option value="carne">R$15,00 Cheeseburguer</option>
+                    <option value="atum">R$21,00 Cheesebacon</option>
+                    <option value="ovo">R$20,00 Duplo Cheeseburguer</option>
+                </select>
+                <button type="button">Acompanhamentos</button>
+                <button type="button">Finalizar</button>
+            </form>
+        </article>
+
+        <section>
+            <p class="texto-destaque marcado-de-verde">Seu total foi de R$<mark id="total"></mark></p>
+        </section>
+    </main>
+
+    <script src="script4.js"></script>
+</body>
+
+</html>

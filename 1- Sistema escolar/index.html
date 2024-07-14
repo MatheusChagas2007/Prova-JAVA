@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="visual.css">
+    <link rel="shortcut icon" href="./img/Logo.svg" type="image/x-icon">
+    <title>Sistema escolar</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="./img/Logo.svg" />
+    </header>
+
+    <main>
+        <article class="resumo">
+            <header>
+                <div>
+                    <h1>Boas vindas</h1>
+                    <p class="texto-destaque">Calcule aqui o percentual de PCD's</p>
+                </div>
+            </header>
+        </article>
+
+        <article class="formulario">
+            <header>
+                <h1>Preencha com os dados da sua escola</h1>
+            </header>
+
+            <form>
+                <input type="number" id="alunos" placeholder="Alunos sem PCD" />
+                <input type="number" id="alunos_pcd" placeholder="Alunos com PCD" />
+                <button type="button" onClick="Calcular()">Calcular</button>
+            </form>
+        </article>
+
+        <section>
+            <p class="texto-destaque marcado-de-verde">Total de alunos: <mark id="total_alunos"></mark></p>
+            <p class="texto-destaque marcado-de-verde"><mark id="percentual_pcd"></mark>% Possuem PCD</p>
+            </p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

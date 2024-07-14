@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="visual.css">
+    <script src="main.js"></script>
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+    <title>Gerenciamento de Convidados</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="./img/logo.svg" />
+    </header>
+
+    <main>
+        <article class="resumo">
+            <header>
+                <div>
+                    <h1>Boas vindas</h1>
+                    <p class="texto-destaque">Lista de convidados</p>
+                </div>
+            </header>
+        </article>
+
+        <article class="formulario">
+            <header>
+                <h1>Preencha com o nome dos seus convidados</h1>
+            </header>
+
+            <form>
+                <input type="text" id="convidado" placeholder="Nome do convidado" />
+                <button type="button">Cadastrar</button>
+                <button type="button">Remover</button>
+                <button type="button">Convidados</button>
+            </form>
+        </article>
+
+        <section>
+            <p class="texto-destaque marcado-de-verde">Lista de convidados:</p>
+            <ol id="lista_convidados"></ol>
+        </section>
+    </main>
+
+    <script src="script5.js"></script>
+</body>
+
+</html>
